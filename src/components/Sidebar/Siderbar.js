@@ -2,7 +2,7 @@ import React from "react";
 
 import { items } from "../../assets/data";
 
-import closeIcon from "../../images/icon-close.svg";
+import closeIcon from "../../assets/images/icon-close.svg";
 
 import "./Sidebar.scss";
 
@@ -18,8 +18,8 @@ const Siderbar = ({ sidebarRef }) => {
       </div>
 
       <ul className="sidebar__items">
-        {items.map((item) => (
-          <li className="sidebar__item">
+        {items.map((item, index) => (
+          <li className="sidebar__item" key={index}>
             <a className="sidebar__links">{item}</a>
           </li>
         ))}

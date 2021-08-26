@@ -2,8 +2,8 @@ import React, { useRef } from "react";
 
 import Siderbar from "../Sidebar/Siderbar";
 
-import hamburgerMenu from "../../images/hamburger.svg";
-import cart from "../../images/cart.svg";
+import hamburgerMenu from "../../assets/images/hamburger.svg";
+import cart from "../../assets/images/cart.svg";
 
 import "./Navbar.scss";
 

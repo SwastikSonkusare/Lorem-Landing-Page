@@ -22,7 +22,7 @@ const Main = () => {
 
         <ul className="left-section__items">
           {items.map((item, index) => (
-            <li className="left-section__item">
+            <li className="left-section__item" key={index}>
               <a
                 className={
                   liItem === index
@@ -53,8 +53,8 @@ const Main = () => {
         </div>
 
         <div className="section">
-          {cardContents.map((content) => (
-            <Card content={content} />
+          {cardContents.map((content, index) => (
+            <Card content={content} key={index} />
           ))}
         </div>
         <p className="main__paragraph section__paragraph">
