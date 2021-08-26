@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import image1 from "../../images/chad-montano-lP5MCM6nZ5A-unsplash.jpg";
 import image2 from "../../images/photo.jpg";
@@ -35,6 +35,12 @@ const Main = () => {
 
   const items = ["About", "Services", "Cuisine", "Gallery", "Contact", "Book"];
 
+  const [liItem, setLiItem] = useState("");
+
+  const handleClick = (index) => {
+    setLiItem(index);
+  };
+
   return (
     <div className="container">
       <div className="left-section">
@@ -44,9 +50,18 @@ const Main = () => {
         </h2>
 
         <ul className="left-section__items">
-          {items.map((item) => (
+          {items.map((item, index) => (
             <li className="left-section__item">
-              <a className="left-section__links">{item}</a>
+              <a
+                className={
+                  liItem === index
+                    ? "left-section__links strikethrough"
+                    : "left-section__links"
+                }
+                onClick={() => handleClick(index)}
+              >
+                {item}
+              </a>
             </li>
           ))}
         </ul>

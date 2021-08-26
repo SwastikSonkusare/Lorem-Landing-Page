@@ -9,7 +9,7 @@
       max-width: 55rem;
       & span {
         font-size: 6rem;
-        line-height: 9rem;
+        line-height: 10rem;
         font-family: "Besley", serif;
       }
     }
@@ -72,9 +72,9 @@
   & h2 {
     & span {
       display: block;
-      font-size: 4rem;
-      line-height: 1;
       font-family: "Besley", serif;
+      font-size: 4rem;
+      line-height: 1.2;
     }
   }
 
@@ -82,12 +82,14 @@
     list-style: none;
   }
   &__item {
+    cursor: pointer;
     &:not(:last-child) {
       margin-bottom: 4.5rem;
     }
   }
 
   &__links {
+    font-weight: 600;
     text-decoration: none;
     font-size: 1.6rem;
     color: #9095a7;
@@ -95,6 +97,7 @@
 }
 
 .btn {
+  cursor: pointer;
   margin-top: 2rem;
   padding: 1.6rem 2rem;
   background-color: #f25f3a;
@@ -102,4 +105,8 @@
   border-radius: 30px;
   border: none;
   font-size: 1.6rem;
+}
+
+.strikethrough {
+  text-decoration: #f25f3a line-through;
 }
