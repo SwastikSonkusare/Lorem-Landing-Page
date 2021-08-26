@@ -1,0 +1,101 @@
+.main {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 4rem;
+    padding-top: 9rem;
+
+    & h1 {
+      max-width: 55rem;
+      & span {
+        font-size: 6rem;
+        line-height: 9rem;
+      }
+    }
+  }
+
+  &__paragraph {
+    position: relative;
+    font-size: 1.6rem;
+    max-width: 21rem;
+    line-height: 2.1rem;
+    max-height: 10.5rem;
+    color: #9095a7;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      width: 30%; /* or 100px */
+      border-bottom: 3px solid #f25f3a;
+
+      @media only screen and (max-width: 56.25em) {
+        width: 18%;
+      }
+    }
+
+    @media only screen and (max-width: 56.25em) {
+      display: none;
+    }
+  }
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-gap: 2rem;
+  margin-top: 3rem;
+
+  &__paragraph {
+    display: block;
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+    max-width: 32rem;
+    @media only screen and (min-width: 56.25em) {
+      display: none;
+    }
+  }
+}
+
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 5rem;
+
+  @media only screen and (max-width: 56.25em) {
+    display: none;
+  }
+
+  & h2 {
+    & span {
+      display: block;
+      font-size: 4rem;
+      line-height: 1;
+    }
+  }
+
+  &__items {
+    list-style: none;
+  }
+  &__item {
+    margin-bottom: 4.5rem;
+  }
+
+  &__links {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #9095a7;
+  }
+}
+
+.btn {
+  padding: 1.6rem 2rem;
+  background-color: #f25f3a;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.6rem;
+}
