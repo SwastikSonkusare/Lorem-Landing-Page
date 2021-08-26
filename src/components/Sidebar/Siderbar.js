@@ -1,12 +1,12 @@
 import React from "react";
 
+import { items } from "../../assets/data";
+
 import closeIcon from "../../images/icon-close.svg";
 
 import "./Sidebar.scss";
 
 const Siderbar = ({ sidebarRef }) => {
-  const items = ["About", "Services", "Cuisine", "Gallery", "Contact", "Book"];
-
   const closeSideBarHandler = () => {
     sidebarRef.current.classList.toggle("show-sidebar");
   };

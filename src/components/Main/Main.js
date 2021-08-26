@@ -1,40 +1,11 @@
 import React, { useState } from "react";
 
-import image1 from "../../images/chad-montano-lP5MCM6nZ5A-unsplash.jpg";
-import image2 from "../../images/photo.jpg";
-import image3 from "../../images/Indian-Spiced-Chicken-Burger-5.jpg";
-import image4 from "../../images/Spicy_Chicken_Nachos_Recipe_With_Salsa_And_Sour_Cream-1.jpg";
-import image5 from "../../images/hakka-noodles-recipe.jpg";
+import { cardContents, items } from "../../assets/data";
 
 import "./Main.scss";
 import Card from "../Card/Card";
 
 const Main = () => {
-  const cardContents = [
-    {
-      img: image1,
-      text: "Mexican Taco",
-    },
-    {
-      img: image2,
-      text: "Farmhouse Pizza",
-    },
-    {
-      img: image3,
-      text: "Chicken Burger",
-    },
-    {
-      img: image4,
-      text: "Loaded Nachos",
-    },
-    {
-      img: image5,
-      text: "Hakka Noodles",
-    },
-  ];
-
-  const items = ["About", "Services", "Cuisine", "Gallery", "Contact", "Book"];
-
   const [liItem, setLiItem] = useState("");
 
   const handleClick = (index) => {
