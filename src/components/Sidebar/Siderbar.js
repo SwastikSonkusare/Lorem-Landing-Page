@@ -20,7 +20,9 @@ const Siderbar = ({ sidebarRef }) => {
       <ul className="sidebar__items">
         {items.map((item, index) => (
           <li className="sidebar__item" key={index}>
-            <a className="sidebar__links">{item}</a>
+            <a href="#" className="sidebar__links">
+              {item}
+            </a>
           </li>
         ))}
       </ul>

@@ -5,6 +5,10 @@
     grid-gap: 4rem;
     padding-top: 9rem;
 
+    @media only screen and (max-width: 56.25em) {
+      padding-top: 6rem;
+    }
+
     & h1 {
       max-width: 55rem;
 
@@ -57,7 +61,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   grid-gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
 
   &__paragraph {
     display: block;

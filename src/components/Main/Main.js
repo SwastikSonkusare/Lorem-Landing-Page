@@ -24,6 +24,7 @@ const Main = () => {
           {items.map((item, index) => (
             <li className="left-section__item" key={index}>
               <a
+                href="#"
                 className={
                   liItem === index
                     ? "left-section__links strikethrough"
